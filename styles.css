@@ -1,0 +1,81 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #e74c3c, #ff6b6b, #ff7979, #e74c3c);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 15s ease infinite;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 2; /* Increase z-index to bring the container forward */
+}
+
+.form-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #333; /* Dark text color */
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff; /* White background color */
+    color: #e74c3c; /* Red text color */
+}
+
+.buttons button:hover {
+    background-color: #eee; /* Light gray background color on hover */
+}
+
+.form {
+    display: none;
+    margin-top: 20px;
+}
+
+.form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff; /* White background color */
+    color: #e74c3c; /* Red text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #eee; /* Light gray background color on hover */
+}
+
+#emoji-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensure that the emoji rain does not block user interaction with other elements */
+    z-index: 1; /* Ensure that the emoji rain is behind other content */
+    opacity: 50%; /* Adjust opacity as needed */
+}
